@@ -1,6 +1,29 @@
 import subprocess
 
 
+# tmux 结构
+# session {
+#     node (节点 session) {
+#         window-0 {
+#            pane: node     // node 节点
+#            pane: 1        // 可能 node 备用节点
+#         }
+#     }
+#     fish (矿池 session) {
+#         window-pool {      // 运行矿池服务
+#             pane-0: pool-server
+#             pane-1: pool-gate
+#             pane-2: coin-distribution
+#             pane-3: 
+#         }
+#         window-middleware { // 运行 redis, mysql, rabbitmq 等中间件
+#             pane-0: redis
+#             pane-1
+#         }
+#     }
+# }
+
+
 SESSION_FISH = "fish"
 SESSION_NODE = "node"
 WIN_POOL = "pool"

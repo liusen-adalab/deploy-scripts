@@ -1,4 +1,9 @@
+### 使用
+```
+python3 deploy-fish.py
+```
+
 ### TODO
-- [ ] 部署测试
+- [x] 部署测试
 - [ ] 命令行参数
 - [ ] docker, docker-compose

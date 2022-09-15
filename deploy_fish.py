@@ -41,6 +41,9 @@ COIN_DIR = "/home/node/data/pool/distribution"
 def run_cmd(cmd: str):
     return subprocess.run(cmd, shell=True, stderr=subprocess.DEVNULL)
 
+def run_with_output(cmd: str):
+    return subprocess.run(cmd, shell=True)
+
 
 def check_call_cmd(cmd: str):
     subprocess.check_call(cmd, shell=True, stderr=subprocess.DEVNULL)

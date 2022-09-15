@@ -27,6 +27,7 @@ def start_node():
 if __name__ == "__main__":
     allow = ["miner", "node", "pool"]
     cmd = input("ironfish mod to start(node, pool, miner): ")
+    cmd = cmd.strip()
     if cmd == "miner":
         start_miner()
     elif cmd == "node":

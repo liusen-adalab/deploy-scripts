@@ -1,4 +1,4 @@
-from deploy_fish import run_cmd, run_with_output
+from deploy_fish import run_with_output
 
 
 def start_miner():
@@ -11,7 +11,7 @@ def start_miner():
     cmd = cmd.split()
     cmd = " ".join(cmd)
     print(cmd)
-    run_cmd(cmd)
+    run_with_output(cmd)
 
 
 def start_pool():
